@@ -6,7 +6,8 @@
     "start": "node node_modules/react-native/local-cli/cli.js start --skipflow",
     "android": "node node_modules/react-native/local-cli/cli.js run-android",
     "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
-    "prebuild": "node node_modules/.bin/rimraf build",
+    "postinstall": "tsc",
+    "prebuild": "node node_modules/.bin/rimraf build  && tsc",
     "build": "tsc",
     "pretest": "npm run build",
     "test": "jest"
