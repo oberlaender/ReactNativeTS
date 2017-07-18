@@ -39,9 +39,6 @@
       "ts",
       "tsx",
       "js"
-    ] 
-  },
-  "scripts": {
-    "postinstall" : "tsc",
-  },
+    ]
+  }
 }
